@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="Foodirkeeper.MainPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="bhc_chicken2.png"
+                   Aspect="AspectFill"
+                   />
+
+            <Frame BackgroundColor="Gray"
+                   Padding="10" CornerRadius="0">
+                <Label Text="BHC chicken" 
+                       HorizontalTextAlignment="Start"
+                       TextColor="White" 
+                       FontSize="23"
+                       />
+            </Frame>
+            
+            <Label Text="Restaurant information" 
+                   TextColor="Black" 
+                   FontSize="Title" 
+                   Padding="10,5,20,0"
+                   />
+            <Label Text="Address: 서울시 성동구 한양대학교"
+                   TextColor="Black" 
+                   FontSize="Small"
+                   Padding="10,0,0,0" 
+                   />
+            <Label Text="Telephone: 010-1234-5678"
+                   TextColor="Black" 
+                   FontSize="Small"
+                   Padding="10,0,0,0" 
+                   />
+            <Label Text="Pick up time: 19:00 - 21:00"
+                   TextColor="Black" 
+                   FontSize="Small"
+                   Padding="10,0,0,0" 
+                   />
+            <Label Text="Today's Meanu" 
+                   TextColor="Black" 
+                   FontSize="Large"
+                   Padding="10,5,10,5" 
+                   />
+            <Label Text="Chicken         10,000원" 
+                   TextColor="Black" 
+                   FontSize="Body"
+                   Padding="10,5,10,5" 
+                   />
+            <Label Text="Fish                8000원" 
+                   TextColor="Black" 
+                   FontSize="Body"
+                   Padding="10,5,10,5" 
+                   />
+            <Label Text="치즈볼             2000원" 
+                   TextColor="Black" 
+                   FontSize="Body"
+                   Padding="10,5,10,5" 
+                   />
+
+            <Button Text="Order"
+                    BackgroundColor="#2196F3"
+                    WidthRequest="100"
+                    MinimumHeightRequest="100"
+                    HorizontalOptions="Center"
+                    VerticalOptions="EndAndExpand"
+                    Opacity="0.7"
+                    CornerRadius="20"
+                    Clicked="Button_Clicked2"
+                    />
+
+
+
+        </StackLayout>
+
+    </ContentPage.Content>
+
+        
+
+</ContentPage>

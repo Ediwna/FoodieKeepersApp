@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="Foodirkeeper.Page1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="HotPink"
+                   Padding="20" CornerRadius="0">
+                <Label Text="Success Ordered" 
+                       HorizontalTextAlignment="Center"
+                       TextColor="White" 
+                       FontSize="40"
+                       />
+            </Frame>
+
+            <Image Source="order_success.png"
+                   Aspect="AspectFill"
+                   />
+
+            <Label Text="You have successfully ordered! You have go to the restaurant before it closed!"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   />
+
+            <Entry Placeholder="Please entry order phone number" 
+                   Keyboard="Telephone"
+                   />
+
+
+            <Button Text="Cancel"
+                    BackgroundColor="#2196F3"
+                    WidthRequest="100"
+                    MinimumHeightRequest="100"
+                    HorizontalOptions="Center"
+                    VerticalOptions="EndAndExpand"
+                    Opacity="0.7"
+                    CornerRadius="20"
+                    Clicked="Button_Clicked"
+                    />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
